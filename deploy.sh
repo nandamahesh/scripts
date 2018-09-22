@@ -1,6 +1,7 @@
 #!/bin/bash
 ENVIRONMENT=$1
-if [ $ENVIRONMENT -eq "QA" ]; then
+if [ $ENVIRONMENT = "QA" ];
+then
 for i in `cat IPs.txt`
 do
 echo "Deploying war file into $i QA Server..."
